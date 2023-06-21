@@ -3,6 +3,9 @@ import React from 'react';
 import MovieCard from '../components/MovieCard';
 
 const Movie = async () => {
+
+  await new Promise(resolve => setTimeout(resolve, 2000));
+
   const url = process.env.RAPID_KEY;
 
   const options = {
