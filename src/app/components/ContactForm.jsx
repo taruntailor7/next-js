@@ -24,7 +24,9 @@ const ContactForm = () => {
         const {name, value} = e.target;
         setUser({...user, [name] : value});
     }
+    
     console.log(user, 'user'); 
+
     const handleSubmit = (e) => {
         e.preventDefault();
     }
